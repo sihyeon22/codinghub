@@ -13,15 +13,17 @@ vector<int> solution(int l, int r) {
         is_valid = true;
         
         for (char digit : num) {
-            if (digit != '5' && digit != '0')
+            if (digit != '5' && digit != '0') {
                 is_valid = false;
+                break;
+            }
         }
         
         if (is_valid)
             answer.push_back(i);
     }
     
-    if (answer.size() == 0)
+    if (answer.empty())
         answer.push_back(-1);
     
     return answer;
