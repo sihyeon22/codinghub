@@ -1,10 +1,10 @@
 # [level 0] 문자열 여러 번 뒤집기 - 181913 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181913?language=cpp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181913?language=c) 
 
 ### 성능 요약
 
-메모리: 3.95 MB, 시간: 0.22 ms
+메모리: 4.25 MB, 시간: 0.09 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 05월 18일 16:05:12
+2026년 05월 18일 16:17:37
 
 ### 문제 설명
 
