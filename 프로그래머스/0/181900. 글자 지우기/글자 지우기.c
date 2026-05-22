@@ -8,23 +8,21 @@
 char* solution(const char* my_string, int indices[], size_t indices_len) {
     // return 값은 malloc 등 동적 할당을 사용해주세요. 할당 길이는 상황에 맞게 변경해주세요.
     char* answer = (char*)malloc(sizeof(char) * (strlen(my_string) - indices_len) + 1);
+    char* tmp = (char*)malloc(sizeof(char) * strlen(my_string) + 1);
     int idx = 0;
     
-    for (int i = 0; i < strlen(my_string); i++) {
-        int is_in = 0;
-        
-        for (int j = 0; j < indices_len; j++) {
-            if (i == indices[j]) {
-                is_in = 1;
-                break;
-            }
-        }
-        
-        if (is_in == 0)
-            answer[idx++] = my_string[i];
+    strcpy(tmp, my_string);
+    
+    for (int i = 0; i < indices_len; i++) {
+        tmp[indices[i]] = ' ';
     }
     
-    answer[idx++] = '\0';
+    for (int i = 0; i < strlen(tmp); i++) {
+        if (tmp[i] != ' ')
+            answer[idx++] = tmp[i];
+    }
+    
+    answer[idx] = '\0';
     
     return answer;
 }
