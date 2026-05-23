@@ -1,10 +1,10 @@
 # [level 0] 2의 영역 - 181894 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181894) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181894?language=c) 
 
 ### 성능 요약
 
-메모리: 22.2 MB, 시간: 16.34 ms
+메모리: 23.5 MB, 시간: 16.17 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 05월 23일 16:21:10
+2026년 05월 23일 16:26:45
 
 ### 문제 설명
 
