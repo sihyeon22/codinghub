@@ -7,18 +7,14 @@
 int* solution(int arr[], size_t arr_len, int** intervals, size_t intervals_rows, size_t intervals_cols) {
     // return 값은 malloc 등 동적 할당을 사용해주세요. 할당 길이는 상황에 맞게 변경해주세요.
     int idx = 0;
-    int size1 = intervals[0][1] - intervals[0][0] + 1;
-    int size2 = intervals[1][1] - intervals[1][0] + 1;
-    int* answer = (int*)malloc(sizeof(int) * (size1 + size2));
+    int size = intervals[0][1] - intervals[0][0] + intervals[1][1] - intervals[1][0] + 2;
+    int* answer = (int*)malloc(sizeof(int) * (size));
     
-    for (int i = 0; i < intervals_rows; i++) {
-        int s = intervals[i][0];
-        int e = intervals[i][1];
-        
-        for (int j = s; j <= e; j++) {
-            answer[idx++] = arr[j];
-        }
-    }
+    for (int i = intervals[0][0]; i <= intervals[0][1]; i++)
+        answer[idx++] = arr[i];
+    
+    for (int i = intervals[1][0]; i <= intervals[1][1]; i++)
+        answer[idx++] = arr[i];
     
     return answer;
 }
