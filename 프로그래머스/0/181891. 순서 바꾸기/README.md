@@ -1,10 +1,10 @@
 # [level 0] 순서 바꾸기 - 181891 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181891) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181891?language=c) 
 
 ### 성능 요약
 
-메모리: 3.93 MB, 시간: 0.03 ms
+메모리: 3.82 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 05월 31일 18:02:58
+2026년 06월 01일 18:23:41
 
 ### 문제 설명
 
