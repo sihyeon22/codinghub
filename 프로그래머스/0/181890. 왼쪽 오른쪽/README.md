@@ -1,10 +1,10 @@
 # [level 0] 왼쪽 오른쪽 - 181890 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181890?language=cpp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181890) 
 
 ### 성능 요약
 
-메모리: 3.94 MB, 시간: 0.01 ms
+메모리: 3.88 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 06월 05일 17:55:59
+2026년 06월 05일 18:10:48
 
 ### 문제 설명
 

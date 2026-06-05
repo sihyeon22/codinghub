@@ -8,21 +8,14 @@ vector<string> solution(vector<string> str_list) {
     int i;
     
     for (i = 0; i < str_list.size(); i++) {
-        if (str_list[i] == "l" || str_list[i] == "r")
-            break;
-    }
-    
-    if (i == str_list.size()) return answer;
-        
-    else {
         if (str_list[i] == "l") {
-            for (int j = 0; j < i; j++)
-                answer.push_back(str_list[j]);
+            answer = vector<string>(str_list.begin(), str_list.begin() + i);
+            break;
         }
         
-        else {
-            for (int j = i + 1; j < str_list.size(); j++)
-                answer.push_back(str_list[j]);
+        if (str_list[i] == "r") {
+            answer = vector<string>(str_list.begin() + i + 1, str_list.end());
+            break;
         }
     }
     
